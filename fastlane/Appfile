@@ -1,0 +1,8 @@
+app_identifier("com.esgi.Test2020") # The bundle identifier of your app
+apple_id("briatte.benoit@digipolitan.com") # Your Apple email address
+
+itc_team_id("94010800") # App Store Connect Team ID
+team_id("582762VK3P") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
