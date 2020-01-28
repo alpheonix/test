@@ -21,7 +21,10 @@ platform :ios do
       get_version_number
       increment_version_number(bump_type: "major")
       scan(code_coverage: true)
-      pilot
+      upload_to_testflight(
+        username: "arthurblanc@gmail.com",
+        app_identifier: "com.esgi.Test2020"
+      )
       xcov
     end
 end
