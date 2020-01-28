@@ -21,11 +21,7 @@ platform :ios do
       get_version_number
       increment_version_number(bump_type: "major")
       scan(code_coverage: true)
-      appledoc(
-          project_name: "Test2020",
-          project_company: "Company Name",
-          input: "Algo2020.swift"
-        )
+      pilot
       xcov
     end
 end
