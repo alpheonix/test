@@ -17,7 +17,7 @@ default_platform(:ios)
 
 platform :ios do
     desc "My best lane <3"
-    lane :bonjour do
+    lane :unitTest do
       #print get_version_number
       #print increment_version_number(bump_type: "major")
       scan(code_coverage: true)

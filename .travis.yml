@@ -11,4 +11,6 @@ notifications:
 install:
   - gem install bundler
   - bundle install
-script: ./curlDiscord.sh
+script: 
+  - ./curlDiscord.sh
+  - bundle exec fastlane ios unitTest
