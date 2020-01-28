@@ -4,7 +4,6 @@ before_install:
   - chmod +x curlDiscord.sh
 branches:
   only:
-    - develop
     - master
 notifications:
   email: false
