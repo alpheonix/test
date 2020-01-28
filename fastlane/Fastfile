@@ -22,7 +22,7 @@ platform :ios do
       increment_version_number(bump_type: "major")
       scan(code_coverage: true)
       upload_to_testflight(
-        username: "arthurblanc@gmail.com",
+        username: "arthurblanc98@gmail.com",
         app_identifier: "com.esgi.Test2020"
       )
       xcov
