@@ -18,9 +18,10 @@ default_platform(:ios)
 platform :ios do
     desc "My best lane <3"
     lane :unitTest do
-      #print get_version_number
-      #print increment_version_number(bump_type: "major")
+      get_version_number
+      increment_version_number(bump_type: "major")
       scan(code_coverage: true)
+      jazzy
       xcov
     end
 end
