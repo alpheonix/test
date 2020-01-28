@@ -16,6 +16,8 @@ class Algo2020 {
         self.val = val
     }
     
+    
+    /// isLess: This is a function
     func isLess(than val: Int) -> Bool {
         return val < self.val
     }
