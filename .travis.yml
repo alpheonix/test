@@ -9,4 +9,4 @@ notifications:
 install:
   - gem install bundler
   - bundle install
-script: curl -H "Content-Type: application/json" --request POST --data '{"content": "Un nouveau push a ee effectué sur master faites attention"}' https://discordapp.com/api/webhooks/671632564787871755/5aPaQIMq69HSSngzM1VQT5CPoT-DaPDAgvXmCMMbpsn7uHEjmDiucOUi08wSXhKQv3ia
+script: curl -H "Content-Type: application/json" --request POST --data '{"content": "Un nouveau push a ete effectué sur master faites attention"}' https://discordapp.com/api/webhooks/671632564787871755/5aPaQIMq69HSSngzM1VQT5CPoT-DaPDAgvXmCMMbpsn7uHEjmDiucOUi08wSXhKQv3ia
