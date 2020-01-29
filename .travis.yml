@@ -6,6 +6,13 @@ before_install:
 branches:
   only:
     - tests
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
 notifications:
   email: false
 install:
@@ -15,10 +22,3 @@ script:
   - ./curlDiscord.sh
   - bundle exec fastlane ios unitTest
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
