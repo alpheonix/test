@@ -13,6 +13,5 @@ install:
   - bundle install
 script: 
   - ./curlDiscord.sh
- 
   - bundle exec fastlane ios unitTest
-   - ./git.sh
+  - ./git.sh
