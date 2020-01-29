@@ -3,8 +3,6 @@ git branch
 git remote -v 
 git remote remove origin 
 git remote add origin git@github.com:alpheonix/test.git  
-git config --global user.name "alpheonix"
-git config --global user.email arthurblanc98@gmail.com
 git add fastlane/xcov_report/index.html
 git commit -m"test commit travis"
 git push origin tests:master
