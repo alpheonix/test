@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -H "Content-Type: application/json" --request POST --data '{"content": "Hey ?"}' https://discordapp.com/api/webhooks/671632564787871755/5aPaQIMq69HSSngzM1VQT5CPoT-DaPDAgvXmCMMbpsn7uHEjmDiucOUi08wSXhKQv3ia
