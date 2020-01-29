@@ -10,19 +10,13 @@ notifications:
 install:
   - gem install bundler
   - bundle install
-
+script: 
+  - if [ "$TRAVIS_BRANCH" = "gh-page" ]; then ./curlDiscord.sh fi 
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then bundle exec fastlane ios unitTest fi 
 deploy:
-  - provider: script
-    script: bundle exec fastlane ios unitTest
-    on:
-      branch: master
-   - provider: script
-    script: ./curlDiscord.sh
-    on:
-      branch: gh-page
-  - provider: pages
-    skip_cleanup: true
-    github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-    keep_history: true
-    on:
-      branch: gh-page
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
