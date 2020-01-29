@@ -21,7 +21,7 @@ platform :ios do
       get_version_number
       increment_version_number(bump_type: "major")
       scan(code_coverage: true,
-           open_report: true )
+           output_directory: ./fastlane/xcov_report )
       #upload_to_testflight(
        # username: "arthurblanc98@gmail.com",
         #app_identifier: "com.esgi.Test2020"
