@@ -1,6 +1,8 @@
 #!/bin/bash
 git branch
-git remote set-url origin https://github.com/alpheonix/test.git
+git remote -v 
+git remote remove origin 
+git remote add origin git@github.com:alpheonix/test.git  
 git config --global user.name "alpheonix"
 git config --global user.email arthurblanc98@gmail.com
 git add fastlane/xcov_report/index.html
