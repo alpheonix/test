@@ -19,6 +19,7 @@ platform :ios do
     desc "My best lane <3"
     lane :unitTest do
       get_version_number
+      print git_branch
       increment_version_number(bump_type: "major")
       scan(code_coverage: true)
       upload_to_testflight(
