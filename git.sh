@@ -1,8 +1,10 @@
 #!/bin/bash
-git branch
-git remote -v 
-git remote remove origin 
-git remote add origin git@github.com:alpheonix/test.git  
-git add fastlane/xcov_report/index.html
-git commit -m"test commit travis"
-git push origin tests:master
+echo "git push"
+git config --global user.email "travis@travis-ci.org"
+git config --global user.name "Travis CI"
+git config --global push.default current
+git stash
+git checkout ${TRAVIS_BRANCH}
+git stash pop
+grunt release
+git push https://${GH_TOKEN}@github.com/stoplay/stoplay-ext.git
