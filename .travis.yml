@@ -11,7 +11,9 @@ install:
   - gem install bundler
   - bundle install
 script: 
+  if: branch = gh-page
   - ./curlDiscord.sh
+  if: branch = master
   - bundle exec fastlane ios unitTest
 deploy:
   provider: pages

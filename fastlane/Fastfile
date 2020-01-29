@@ -20,8 +20,7 @@ platform :ios do
     lane :unitTest do
       get_version_number
       increment_version_number(bump_type: "major")
-      scan(code_coverage: true,
-           output_directory: ./fastlane/xcov_report )
+      scan(code_coverage: true )
       #upload_to_testflight(
        # username: "arthurblanc98@gmail.com",
         #app_identifier: "com.esgi.Test2020"
