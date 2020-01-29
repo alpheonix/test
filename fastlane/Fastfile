@@ -26,6 +26,8 @@ platform :ios do
        # username: "arthurblanc98@gmail.com",
         #app_identifier: "com.esgi.Test2020"
       #)
-      xcov
+      xcov(
+        html_report: true
+      )
     end
 end
