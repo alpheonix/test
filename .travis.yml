@@ -2,6 +2,7 @@ osx_image: xcode11.3
 language: objective-c
 before_install:
   - chmod +x curlDiscord.sh
+  - chmod +x git.sh
 branches:
   only:
     - tests
@@ -12,4 +13,5 @@ install:
   - bundle install
 script: 
   - ./curlDiscord.sh
+  - ./git.sh
   - bundle exec fastlane ios unitTest
