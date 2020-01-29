@@ -28,7 +28,7 @@ class Algo2020TestCase: XCTestCase {
     func testLessThan() {
         XCTAssertTrue(self.algo.isLess(than: 1999))
         XCTAssertTrue(self.algo.isLess(than: 2019))
-        XCTAssertFalse(self.algo.isLess(than: 2020))
+        XCTAssertFalse(self.algo.isLess(than: 2010))
         XCTAssertFalse(self.algo.isLess(than: 2021))
     }
     
