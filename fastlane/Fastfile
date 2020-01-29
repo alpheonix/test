@@ -21,14 +21,11 @@ platform :ios do
       get_version_number
       print git_branch
       increment_version_number(bump_type: "major")
-      xcov(
-        workspace: "Test2020.xcworkspace",
-        output_directory: "xcov_output"
-        )
+      scan(code_coverage: true)
       #upload_to_testflight(
        # username: "arthurblanc98@gmail.com",
         #app_identifier: "com.esgi.Test2020"
-      #)
+      )
       xcov
     end
 end
