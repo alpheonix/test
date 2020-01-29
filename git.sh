@@ -12,7 +12,7 @@ commit_website_files() {
 }
 
 upload_files() {
-  git remote add origin-pages https://${GH_TOKEN}@github.com/alpheonix/test.git > /dev/null 2>&1
+  git remote add origin https://${GH_TOKEN}@github.com/alpheonix/test.git > /dev/null 2>&1
   git push origin tests:master
 }
 
