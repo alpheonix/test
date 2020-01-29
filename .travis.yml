@@ -12,8 +12,8 @@ install:
   - gem install bundler
   - bundle install
 script: 
-  - if [ "$TRAVIS_BRANCH" = "gh-page" ]; then ./curlDiscord.sh fi 
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then bundle exec fastlane ios unitTest fi 
+  - if [ "$TRAVIS_BRANCH" = "gh-page" ]; then ./curlDiscord.sh; fi 
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then bundle exec fastlane ios unitTest; fi 
 deploy:
   provider: pages
   skip_cleanup: true
